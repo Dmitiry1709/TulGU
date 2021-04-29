@@ -1,0 +1,36 @@
+{
+  "name": "tulgu.imposters.fun",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Dmitriy Petrovichev",
+  "license": "ISC",
+  "scripts": {
+    "prod": "encore production",
+    "dev": "encore dev",
+    "watch": "encore dev --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@symfony/webpack-encore": "^0.28.3",
+    "autoprefixer": "^9.7.4",
+    "imask": "^4.0.0",
+    "jquery": "^3.4.1",
+    "jscrollpane": "^2.2.1",
+    "moment": "^2.22.2",
+    "node-sass": "^4.13.1",
+    "object-fit-images": "^3.2.4",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "popper.js": "^1.14.4",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "svg-sprite-loader": "^4.2.1",
+    "svgo-loader": "^2.2.1",
+    "swiper": "^5.3.6",
+    "tiny-slider": "^2.8.8",
+    "tooltip.js": "^1.3.0",
+    "uglifyjs-webpack-plugin": "^2.2.0"
+  }
+}

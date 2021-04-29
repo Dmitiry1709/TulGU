@@ -1,0 +1,13 @@
+.list {
+	&-row {
+		list-style: none;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+
+		& > * {
+			margin-right: 15px;
+			margin-bottom: 5px;
+		}
+	}
+}

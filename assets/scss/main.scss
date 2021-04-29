@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'helpers/variables',
+  'helpers/mixins',
+  'helpers/service';
+
+// 2. Vendors
+@import
+  'vendor/bootstrap-grid',
+  'vendor/tiny-slider';
+
+// 3. Base
+@import 
+  'base',
+  'forms';
+
+// 4. Typography
+@import 
+  'typography/fonts',
+  'typography/iconsfont',
+  'typography/typography';
+
+// 5. Layouts
+@import 
+  'layouts/navigation',
+  'layouts/header',
+  'layouts/sidebar',
+  'layouts/footer';
+
+// 6. Components
+@import
+  'components/button',
+  'components/slider',
+  'components/page-block',
+  'components/banner',
+  'components/post',
+  'components/list',
+  'components/event-box',
+  'components/tags',
+  'components/table',
+  'components/file-icon';

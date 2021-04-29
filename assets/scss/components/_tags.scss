@@ -1,0 +1,26 @@
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+
+	&-item {
+		display: block;
+		padding: 5px 15px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 20px;
+		color: lighten($secondary-color, 3%);
+		background: #fefefe;
+		transition: .25s;
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+			opacity: .75;
+		}
+	}
+}

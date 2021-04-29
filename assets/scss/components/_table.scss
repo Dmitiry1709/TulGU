@@ -1,0 +1,57 @@
+.table {
+	width: 100%;
+
+	&-head {
+		border-bottom: 4px solid $primary-color;
+	}
+
+	&-row {
+		display: flex;
+		width: 100%;
+		padding: 20px 0;
+		border-bottom: 1px solid $gray-color;
+
+		@include phone() {
+			padding: 15px 0;
+			flex-wrap: wrap;
+		}
+
+		&-item {
+			flex: 1;
+			font-size: 15px;
+
+			@include phone() {
+				padding: 3px 0;
+				flex: auto !important;
+			}
+		}
+	}
+
+	&-head &-row {
+		@include phone() {
+			padding: 0;
+		}
+	}
+
+	&-head &-row-item {
+		font-weight: 700;
+		color: $primary-color;
+		display: flex;
+		align-items: flex-end;
+
+		@include phone() {
+			padding: 5px 0;
+		}
+	}
+
+	&-title {
+		margin: 20px 0;
+		font-size: 20px;
+		line-height: 1.5;
+
+		@include phone() {
+			margin-bottom: 10px;
+		}
+	}
+}
+

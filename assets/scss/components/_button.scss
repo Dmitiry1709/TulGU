@@ -1,0 +1,162 @@
+// Reset button styles
+button {
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	color: inherit;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	text-align: left;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 25px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: .2s;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&[disabled],
+	&.disabled {
+		cursor: not-allowed;
+	}
+
+	@include phone() {
+		padding: 7px 25px;
+	}
+
+	&-sm {
+		padding: 2px 15px;
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	&-md {
+		padding: 7px 12px;
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+
+	&-primary {
+		background: $primary-color;
+		border: 3px solid $primary-color;
+		color: #fff;
+
+		&[disabled],
+		&.disabled {
+			color: rgba($primary-color, .5);
+			background: $gray-color;
+			border: 3px solid $gray-color;
+		}
+
+		&:hover:not([disabled]):not(.disabled),
+		&:focus:not([disabled]):not(.disabled),
+		&:active:not([disabled]):not(.disabled) {
+			opacity: .85;
+		}
+	}
+
+	&-primary-outline {
+		color: $primary-color;
+		border: 3px solid $primary-color;
+		background: transparent;
+
+		&[disabled],
+		&.disabled {
+			color: rgba($primary-color, .7);
+			border: 3px solid rgba($primary-color, .7);
+		}
+
+		&:hover:not([disabled]):not(.disabled),
+		&:focus:not([disabled]):not(.disabled),
+		&:active:not([disabled]):not(.disabled) {
+			opacity: .85;
+			background: $primary-color;
+			border: 3px solid $primary-color;
+			color: #fff;
+		}
+	}
+
+	&-white {
+		background: #fff;
+		color: $primary-color;
+		border: 3px solid #fff;
+	}
+
+	&-white-outline {
+		background: transparent;
+		color: #fff;
+		border: 3px solid #fff;
+	}
+
+	&-info {
+		color: #fff;
+		background: $blue-color;
+		border: 3px solid $blue-color;
+
+		&[disabled],
+		&.disabled {
+			color: rgba($blue-color, .7);
+			border: 3px solid rgba($blue-color, .7);
+		}
+
+		&:hover:not([disabled]):not(.disabled),
+		&:focus:not([disabled]):not(.disabled),
+		&:active:not([disabled]):not(.disabled) {
+			opacity: .85;
+			background: $blue-color;
+			border: 3px solid $blue-color;
+			color: #fff;
+		}
+	}
+
+	&-block {
+		display: block;
+		width: 100%;
+	}
+
+	&[class*="bg-"] {
+		white-space: nowrap;
+		@include phone() {
+			padding: 12px 14px;
+			text-align: center;
+		}
+
+		span {
+			@include phone() {
+				display: none;
+			}
+		}
+
+		i {
+			margin-right: 20px;
+			font-size: 24px;
+
+			@include phone() {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-toolbar {
+		display: flex;
+		flex-direction: flex-start;
+		align-items: center;
+
+		& > *:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+}

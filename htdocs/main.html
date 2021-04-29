@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>UI</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link rel="stylesheet" href="assets/build/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<nav class="header-top-nav">
+						<ul class="nav-list nav-list-row">
+							<li><button data-navigation-toggle class="header-toggle"><i class="i-bars"></i></button></li>
+							<li data-header-tab="#top-tab-1" class="nav-link"><a href="#">Абитуриентам</a></li>
+							<li class="nav-link"><a href="#">Студентам</a></li>
+							<li class="nav-link"><a href="#">Аспирантам</a></li>
+							<li class="nav-link"><a href="#">Выпускникам</a></li>
+							<li class="nav-link"><a href="#">Сотрудникам</a></li>
+							<li class="nav-link"><a href="#">Работодателям</a></li>
+							<li class="nav-link"><a href="#">Партнерам</a></li>
+							<li class="nav-link pull-right"><a href="#"><i class="i-search"></i></a></li>
+							<li class="nav-link"><a href="#"><i class="i-glasses"></i></a></li>
+							<li class="nav-link"><a href="#"><i class="i-login"></i></a></li>
+							<li class="nav-link"><a href="#">ru</a></li>
+							<li class="nav-link"><a href="#">en</a></li>
+							<li class="nav-link"><a href="#">cn</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-dropdown header-dropdown-absolute" id="top-tab-1">
+					<div class="container">
+						<ul class="nav-list nav-list-row nav-list-row-start">
+							<li class="nav-link"><a href="#">Приемная комиссия</a></li>
+							<li class="nav-link"><a href="#">Прием 2018</a></li>
+							<li class="nav-link"><a href="#">Правила приема</a></li>
+							<li class="nav-link"><a href="#">Подготовка к поступлению</a></li>
+							<li class="nav-link"><a href="#">Прием после колледжа</a></li>
+							<li class="nav-link"><a href="#">Олимпиады</a></li>
+							<li class="nav-link"><a href="#">Прием лиц с ОВЗ</a></li>
+							<li class="nav-link"><a href="#">Прием иностранных граждан</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="header-main-content">
+						<a href="#" class="header-logo"></a>
+						<nav class="header-buttons">
+							<div class="btn-toolbar mb-5" role="navigation">
+								<a href="#" class="btn btn-primary btn-md">Личный кабинет</a>
+								<a href="#" class="btn btn-primary btn-md">Сервисы</a>
+								<a href="#" class="btn btn-primary btn-md">Сайты ТулГУ</a>
+								<a href="#" class="btn btn-primary btn-md">Связаться с нами</a>
+							</div>
+							<a class="nav-link nav-link-plain" href="#">Сведения об образовательной организации</a>
+						</nav>
+						<ul class="nav-list nav-list-row">
+							<li data-header-tab="#tab-1" class="nav-link nav-link-lg"><button>Университет</button></li>
+							<li data-header-tab="#tab-2" class="nav-link nav-link-lg"><button>Образование</button></li>
+							<li class="nav-link nav-link-lg"><button>Наука</button></li>
+							<li class="nav-link nav-link-lg"><button>Международная деятельность</button></li>
+							<li class="nav-link nav-link-lg"><button>Университетская жизнь</button></li>
+							<li class="nav-link nav-link-lg"><button>Прессе</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-dropdown header-dropdown-lg" id="tab-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<ul class="nav-list">
+								<li class="nav-link nav-link-lg"><button>Сведения об образовательной организации</button></li>
+								<li class="nav-link nav-link-lg"><button>История</button></li>
+								<li class="nav-link nav-link-lg"><button>Структура</button></li>
+								<li class="nav-link nav-link-lg"><button>Документы</button></li>
+								<li class="nav-link nav-link-lg"><button>Руководство</button></li>
+								<li class="nav-link nav-link-lg"><button>Документы</button></li>
+								<li class="nav-link nav-link-lg"><button>Об учредителе</button></li>
+								<li class="nav-link nav-link-lg"><button>Стандарты</button></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="nav-list">
+								<li class="nav-link nav-link-lg"><button>Образовательный процесс</button></li>
+								<li class="nav-link nav-link-lg"><button>Научная работа</button></li>
+								<li class="nav-link nav-link-lg"><button>Международное сотрудничество</button></li>
+								<li class="nav-link nav-link-lg"><button>Социальная сфера</button></li>
+								<li class="nav-link nav-link-lg"><button>Деятельность</button></li>
+								<li class="nav-link nav-link-lg"><button>Инфраструктура</button></li>
+								<li class="nav-link nav-link-lg"><button>Поддержка студентов</button></li>
+								<li class="nav-link nav-link-lg"><button>Контакты</button></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="post">
+								<a href="#" class="post-media">
+									<img src="images/post-1.png" alt="">
+								</a>
+								<div class="post-content">
+									<a href="#" class="h4">ТулГУ и ВТБ24: подготовка кадров — задача общая</a>
+									<p class="text-secondary">18 декабря 2017</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="header-dropdown header-dropdown-lg" id="tab-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<ul class="nav-list">
+								<li class="nav-link nav-link-lg"><button>Сведения об образовательной организации</button></li>
+								<li class="nav-link nav-link-lg"><button>История</button></li>
+								<li class="nav-link nav-link-lg"><button>Структура</button></li>
+								<li class="nav-link nav-link-lg"><button>Документы</button></li>
+								<li class="nav-link nav-link-lg"><button>Руководство</button></li>
+								<li class="nav-link nav-link-lg"><button>Документы</button></li>
+								<li class="nav-link nav-link-lg"><button>Об учредителе</button></li>
+								<li class="nav-link nav-link-lg"><button>Стандарты</button></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="nav-list">
+								<li class="nav-link nav-link-lg"><button>Образовательный процесс</button></li>
+								<li class="nav-link nav-link-lg"><button>Научная работа</button></li>
+								<li class="nav-link nav-link-lg"><button>Международное сотрудничество</button></li>
+								<li class="nav-link nav-link-lg"><button>Социальная сфера</button></li>
+								<li class="nav-link nav-link-lg"><button>Деятельность</button></li>
+								<li class="nav-link nav-link-lg"><button>Инфраструктура</button></li>
+								<li class="nav-link nav-link-lg"><button>Поддержка студентов</button></li>
+								<li class="nav-link nav-link-lg"><button>Контакты</button></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="navigation">
+			<div class="container">
+				<div class="navigation-toolbar">
+					<button data-navigation-toggle class="navigation-close"><i class="i-times"></i></button>
+					<div class="input-group input-group-light">
+						<input type="text" class="form-control">
+						<div class="input-group-actions">
+							<i class="i-search"></i>
+						</div>
+					</div>
+					<ul class="nav-list nav-list-row">
+						<li class="nav-link pull-right"><button><i class="i-search"></i></button></li>
+						<li class="nav-link"><button><i class="i-glasses"></i></button></li>
+						<li class="nav-link"><a href="#">ru</a></li>
+						<li class="nav-link"><a href="#">en</a></li>
+						<li class="nav-link"><a href="#">cn</a></li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="navigation-accordion active">
+							<button class="nav-title">Об университете</button>
+							<div class="navigation-accordion-content">
+								<ul class=" nav-list">
+									<li class="nav-link mx-0"><a href="#">Об образовательной организации</a></li>
+									<li class="nav-link mx-0"><a href="#">Образование</a></li>
+									<li class="nav-link mx-0"><a href="#">Наука</a></li>
+									<li class="nav-link mx-0"><a href="#">Международная деятельность</a></li>
+									<li class="nav-link mx-0"><a href="#">Университетская жизнь</a></li>
+									<li class="nav-link mx-0"><a href="#">Прессе</a></li>
+									<li class="nav-link mx-0"><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="navigation-accordion">
+							<button class="nav-title">Аббитуриентам</button>
+							<div class="navigation-accordion-content">
+								<ul class="nav-list">
+									<li class="nav-link mx-0"><a href="#">Еще ссылки</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="navigation-accordion">
+							<button class="nav-title">Студентам</button>
+							<div class="navigation-accordion-content">
+								<ul class="nav-list">
+									<li class="nav-link mx-0"><a href="#">Еще ссылки</a></li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="nav-title">Аспирантам</a>
+						<a href="#" class="nav-title">Выпускникам</a>
+						<a href="#" class="nav-title">Сотрудникам</a>
+						<a href="#" class="nav-title">Работодателям</a>
+						<a href="#" class="nav-title">Партнерам</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<h4 class="nav-title">Институты</h4>
+						<ul class="nav-list">
+							<li class="nav-list-icon nav-list-icon-brown"><i class="i-logo"></i></li>
+							<li class="nav-link mx-0"><a href="#">Институт прикладной математики и компьютерных наук</a></li>
+							<li class="nav-link mx-0"><a href="#">Институт высокоточных систем им. В. П. Грязева</a></li>
+							<li class="nav-link mx-0"><a href="#">Технический колледж имени С. И. Мосина</a></li>
+							<li class="nav-link mx-0"><a href="#">Политехнический институт</a></li>
+							<li class="nav-link mx-0"><a href="#">Институт горного дела и строительства</a></li>
+						</ul>
+						<ul class="nav-list">
+							<li class="nav-list-icon nav-list-icon-green"><i class="i-logo"></i></li>
+							<li class="nav-link mx-0"><a href="#">Естественно-научный институт</a></li>
+							<li class="nav-link mx-0"><a href="#">Медицинский институт</a></li>
+						</ul>
+						<ul class="nav-list">
+							<li class="nav-list-icon nav-list-icon-cyan"><i class="i-logo"></i></li>
+							<li class="nav-link mx-0"><a href="#">Институт гуманитарных и социальных наук</a></li>
+							<li class="nav-link mx-0"><a href="#">Институт права и управления</a></li>
+							<li class="nav-link mx-0"><a href="#">Институт физической культуры, спорта и туризма</a></li>
+							<li class="nav-link mx-0"><a href="#">Институт международного образования</a></li>
+						</ul>
+						<ul class="nav-list">
+							<li class="nav-list-icon nav-list-icon-orange"><i class="i-logo"></i></li>
+							<li class="nav-link mx-0"><a href="#">Подготовительное отделение</a></li>
+							<li class="nav-link mx-0"><a href="#">Региональный центр повышения квалификации и переподготовки кадров</a></li>
+							<li class="nav-link mx-0"><a href="#">Интернет-институт</a></li>
+							<li class="nav-link mx-0"><a href="#">Факультет вечернего и заочного обучения</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<h4 class="nav-title">Сервисы и информация</h4>
+						<ul class="nav-list mb-40">
+							<li class="nav-link mx-0"><a href="#">Вопросы и ответы</a></li>
+							<li class="nav-link mx-0"><a href="#">Новости</a></li>
+							<li class="nav-link mx-0"><a href="#">Календарь событий</a></li>
+							<li class="nav-link mx-0"><a href="#">Объявления</a></li>
+							<li class="nav-link mx-0"><a href="#">Телефонный справочник</a></li>
+							<li class="nav-link mx-0"><a href="#">Обратная связь</a></li>
+							<li class="nav-link mx-0"><a href="#">Мобильные приложения</a></li>
+							<li class="nav-link mx-0"><a href="#">Студгородок</a></li>
+							<li class="nav-link mx-0"><a href="#">Санаторий-профилакторий</a></li>
+							<li class="nav-link mx-0"><a href="#">Издательство</a></li>
+							<li class="nav-link mx-0"><a href="#">Расписание</a></li>
+							<li class="nav-link mx-0"><a href="#">Карта компетенций</a></li>
+						</ul>
+						<button class="btn btn-white btn-block mb-20">Личный кабинет</button>
+						<button class="btn btn-white-outline btn-block mb-15">Для слабовидящих</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="content">
+			<div class="slider slider-fullsize">
+				<button class="slider-prev"><i class="i-arrow-left"></i></button>
+				<button class="slider-next"><i class="i-arrow-right"></i></button>
+				<div class="slider-container">
+					<div class="slider-block">
+						<div class="slider-content">
+							<div class="container">
+								<div class="row">
+									<h2 class="h1 col-lg-11">ТулГУ и Объединенный университет Пекина: студенческий обмен налажен</h2>
+									<p class="text-lg col-lg-6">Делегация крупнейшего вуза Китайской Народной Республики посетила с рабочим визитом Тульский государственный университет.</p>
+								</div>
+								<div class="row">
+									<a href="#" class="btn btn-info btn-block col-lg-3">Читать новость</a>
+								</div>
+							</div>
+							<div class="slider-image">
+								<img src="images/slider-image-1.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="slider-block">
+						<div class="slider-content">
+							<div class="container">
+								<div class="row">
+									<h2 class="h1 col-lg-11">ТулГУ и Объединенный университет Пекина: студенческий обмен налажен</h2>
+									<p class="text-lg col-lg-6">Делегация крупнейшего вуза Китайской Народной Республики посетила с рабочим визитом Тульский государственный университет.</p>
+								</div>
+								<div class="row">
+									<a href="#" class="btn btn-info btn-block col-lg-3">Читать новость</a>
+								</div>
+							</div>
+							<div class="slider-image">
+								<img src="images/slider-image-1.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-block">
+				<div class="container">
+					<div class="banner">
+						<p class="banner-text">Пройти опрос «Лучшие учебные заведения Тулы»</p>
+					</div>
+				</div>
+			</div>
+			<section class="page-block">
+				<div class="container">
+					<h2 class="h1">Новости</h2>
+					<div class="row">
+						<div class="col-lg-9">
+							<ul class="list list-row mb-30">
+								<li class="mr-0">#</li>
+								<li class="text-secondary"><a href="#">Аббитуриентам</a></li>
+								<li class="text-secondary"><a href="#">День открытых дверей</a></li>
+								<li class="text-secondary"><a href="#">Международная связь</a></li>
+								<li class="text-secondary"><a href="#">Гости университета</a></li>
+								<li class="text-secondary"><a href="#">Награды</a></li>
+								<li class="text-secondary"><a href="#">Лица университета</a></li>
+								<li class="text-secondary"><a href="#">Подразделения</a></li>
+								<li class="text-secondary"><a href="#">Олимпиады</a></li>
+								<li class="text-secondary"><a href="#">ВУЗ здоровья</a></li>
+								<li class="text-secondary"><a href="#">Трудоустройство</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<article class="post m-fit">
+								<a href="#" class="post-media">
+									<img src="images/post-1.png" alt="">
+								</a>
+								<div class="post-content">
+									<h4><a href="#" class="h4">ТулГУ и ВТБ24: подготовка кадров — задача общая</a></h4>
+									<p class="text-secondary">18 декабря 2017</p>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article class="post m-fit">
+								<a href="#" class="post-media">
+									<img src="images/post-2.png" alt="">
+								</a>
+								<div class="post-content">
+									<h4><a href="#" class="h4">Знатоки химии сразились на турнире в ТулГУ</a></h4>
+									<p class="text-secondary">18 декабря 2017</p>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article class="post m-fit">
+								<a href="#" class="post-media">
+									<img src="images/post-3.png" alt="">
+								</a>
+								<div class="post-content">
+									<h4><a href="#" class="h4">В университете создаётся медицинский клинический центр</a></h4>
+									<p class="text-secondary">18 декабря 2017</p>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-12 text-center mt-20">
+							<a href="#" class="btn btn-primary-outline">Все новости</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-block">
+				<div class="container">
+					<h2 class="h1">Объявления</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="post">
+								<a href="#" class="h4">Информация о предоставлении и выплате грантов Президента РФ</a>
+								<p class="text-secondary">18 декабря 2017</p>
+							</div>
+							<div class="post">
+								<a href="#" class="h4">Регистрация на Едином портале государственных и муниципальных услуг</a>
+								<p class="text-secondary">18 декабря 2017</p>
+							</div>
+							<div class="post">
+								<a href="#" class="h4">Программа кредитования Молодые ученые</a>
+								<p class="text-secondary">18 декабря 2017</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="post">
+								<a href="#" class="h4">Электронные учебники в ТулГУ</a>
+								<p class="text-secondary">18 декабря 2017</p>
+							</div>
+							<div class="post">
+								<a href="#" class="h4">Информационное письмо Управления Пенсионного фонда РФ о необходимости получения СНИЛС</a>
+								<p class="text-secondary">18 декабря 2017</p>
+							</div>
+							<div class="post">
+								<a href="#" class="h4">Положение о стипендиальном обеспечении и других формах материальной поддержки студентов, аспирантов, докторантов ТулГУ</a>
+								<p class="text-secondary">18 декабря 2017</p>
+							</div>
+						</div>
+						<div class="col-md-12 text-center mt-20">
+							<a href="#" class="btn btn-primary-outline">Все объявления</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page-block">
+				<div class="container">
+					<div class="event-box m-fit">
+						<div class="event-box-main">
+							<div class="event-box-item">
+								<div class="event-box-content">
+									<ul class="tags">
+										<li><a href="#" class="tags-item">ТулГУ</a></li>
+										<li><a href="#" class="tags-item">Кафедра ФВИС</a></li>
+										<li><a href="#" class="tags-item">Конференция</a></li>
+										<li><a href="#" class="tags-item">Спорт</a></li>
+										<li><a href="#" class="tags-item">Культура</a></li>
+										<li><a href="#" class="tags-item">Здоровье</a></li>
+										<li><a href="#" class="tags-item">Международная жизнь</a></li>
+									</ul>
+								</div>
+								<div class="event-box-bg">
+									<img src="images/event-1.jpg" alt="">
+								</div>
+								<!-- <iframe src="https://www.youtube.com/embed/1La4QzGeaaQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+								<!-- <video controls="controls">
+									<source src="images/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+										Ваш браузер не поддерживает воспроизведение видео,
+										<a href="video/video.mp4">Скачать</a>
+								</video> -->
+							</div>
+						</div>
+						<div class="event-box-list">
+							<div class="event-box-item">
+								<ul class="event-box-toolbar">
+									<li class="bg-blue">Проводится сейчас</li>
+								</ul>
+								<div class="event-box-content">
+									<p>XI Международная научно-практическая конференция (заочная) «Физическая культура, спорт и здоровье студенческой молодежи в современных условиях: проблемы и перспективы развития»</p>
+									<a href="#" class="h4 font-weight-normal">С 4 по 20 декабря 20</a>
+								</div>
+							</div>
+							<div class="event-box-item">
+								<ul class="event-box-toolbar">
+									<li class="bg-red">Событие завершилось</li>
+								</ul>
+								<div class="event-box-content">
+									<p>Наши на «Полиглоте»</p>
+									<a href="#" class="h4 font-weight-normal">С 4 по 20 декабря 2017</a>
+								</div>
+								<div class="event-box-bg">
+									<img src="images/event-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="event-box-item">
+								<ul class="event-box-toolbar">
+									<li class="bg-red">Событие завершилось</li>
+								</ul>
+								<!-- <ul class="event-box-toolbar">
+									<li>23 июня 2018</li>
+									<li><i class="i-comment"></i> 10</li>
+									<li><i class="i-eye"></i> 780</li>
+								</ul> -->
+								<div class="event-box-content">
+									<p>Самые главные выборы</p>
+									<a href="#" class="h4 font-weight-normal">С 4 по 20 декабря 2017</a>
+								</div>
+								<div class="event-box-bg">
+									<img src="images/event-3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center mt-20">
+						<a href="#" class="btn btn-primary-outline">Все события</a>
+					</div>
+				</div>
+			</div>
+			<section class="page-block page-block-lg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Полезные сервисы</h2>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="nav-list">
+										<li class="nav-link text-blue mx-0"><a href="#">Вопросы и ответы</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Новости</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Календарь событий</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Объявления</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Обратная связь</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="nav-list">
+										<li class="nav-link text-blue mx-0"><a href="#">Телефонный справочник</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Студгородок</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Мобильные приложения</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Расписание</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Карта компетенций</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h2>Сайты ТулГУ</h2>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="nav-list">
+										<li class="nav-link text-blue mx-0"><a href="#">Совет молодых ученых</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Библиотека</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Ассоциация выпускников</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Издательство</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Храм</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="nav-list">
+										<li class="nav-link text-blue mx-0"><a href="#">Санаторий</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Интернет-лицей</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Трудоустройство</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Медиацентр</a></li>
+										<li class="nav-link text-blue mx-0"><a href="#">Известия</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-block page-block-lg bg-gray">
+				<div class="container text-center">
+					<h2 class="mb-30">Присоединяйтесь к нам в социальных сетях</h2>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-3">
+							<a href="#" class="btn btn-block bg-vk mb-20"><i class="i-vk"></i> <span>Вконтакте</span></a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-3">
+							<a href="#" class="btn btn-block bg-facebook mb-20"><i class="i-facebook"></i> <span>Facebook</span></a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-3">
+							<a href="#" class="btn btn-block bg-twitter mb-20"><i class="i-twitter"></i> <span>Facebook</span></a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-3">
+							<a href="#" class="btn btn-block bg-instagram mb-20"><i class="i-instagram"></i> <span>Instagram</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3">
+							<a href="#" class="footer-logo"></a>
+							<p class="footer-text">Тула, пр. Ленина, 92</p>
+							<p class="footer-text">(+7 4872) 73-44-44, 33-24-10 <br>Факс: (+7 4872) 35-81-81<br> Приёмная комиссия: (+7 4872) 332-332</p>
+							<a class="footer-text" href="mailto:info@tsu.tula.ru">info@tsu.tula.ru</a>
+							<ul class="nav-list nav-list-row nav-list-row-start">
+								<li class="nav-link nav-link-sm ml-0"><a href="#"><i class="i-vk"></i></a></li>
+								<li class="nav-link nav-link-sm "><a href="#"><i class="i-facebook"></i></a></li>
+								<li class="nav-link nav-link-sm "><a href="#"><i class="i-instagram"></i></a></li>
+								<li class="nav-link nav-link-sm "><a href="#"><i class="i-twitter"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-3 col-lg-2">
+							<h4 class="nav-title nav-title-sm">ТулГУ</h4>
+							<ul class="nav-list">
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Университет</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Образование</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Наука</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Международная деятельность</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Университетская жизнь</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Прессе</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-3 col-lg-2">
+							<h4 class="nav-title nav-title-sm">Разделы</h4>
+							<ul class="nav-list">
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Абитуриентам</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Студентам</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Аспирантам</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Выпускникам</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Сотрудникам</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Работодателям</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Партнерам</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-6 col-lg-2 order-md-1 order-lg-0">
+							<h4 class="nav-title nav-title-sm">Полезные сервисы</h4>
+							<ul class="nav-list">
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Вопросы и ответы</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Новости</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Календарь событиый</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Объявления</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Телефонный справочник</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Обратная связь</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Мобильные приложения</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Расписание</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Карта компетенций</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3 order-md-0 order-lg-1">
+							<h4 class="nav-title nav-title-sm">&nbsp;</h4>
+							<ul class="nav-list mb-25">
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Информация для инвалидов и лиц с ОВЗ</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Обучение иностранных граждан</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Противодействие коррупции в ТулГУ</a></li>
+								<li class="nav-link nav-link-sm mx-0"><a href="#">Противодействие терроризму в ТулГУ</a></li>
+							</ul>
+							<button class="btn btn-md btn-primary btn-block mb-10">Личный кабинет</button>
+							<button class="btn btn-md btn-white-outline btn-block">Для слабовидящих</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<ul class="nav-list nav-list-row nav-list-row-start">
+						<li class="nav-link nav-link-sm"><a href="#">© Тульский государственный университет, 2007–2017</a></li>
+						<li class="nav-link nav-link-sm"><a href="#">Минобрнауки</a></li>
+						<li class="nav-link nav-link-sm ml-lg-auto"><a href="#">Политика обработки персональных данных</a></li>
+						<li class="nav-link nav-link-sm"><a href="#">Сайты ТулГУ</a></li>
+						<li class="nav-link nav-link-sm"><a href="#">Карта сайта</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="assets/build/js/main.js"></script>
+</body>
+
+</html>

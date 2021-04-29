@@ -1,0 +1,218 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-stack;
+	font-weight: 400;
+	font-style: normal;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	/*-webkit-font-smoothing: subpixel-antialiased;*/
+	/*-moz-osx-font-smoothing: auto;*/
+	-webkit-overflow-scrolling: touch;
+}
+
+// -----------------------------------------------------------------------------
+// Blox aligment (if element have parent flex element).
+// -----------------------------------------------------------------------------
+
+.pull-right {
+	margin-left: auto !important;
+}
+
+.pull-left {
+	margin-right: auto !important;
+}
+
+// -----------------------------------------------------------------------------
+// CSS modifiers.
+// -----------------------------------------------------------------------------
+
+@for $i from 0 through 20 {
+  	.mt-#{$i * 5} { 
+  		margin-top: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 20 {
+  	.mb-#{$i * 5} { 
+  		margin-bottom: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 20 {
+  	.mr-#{$i * 5} { 
+  		margin-right: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 20 {
+  	.ml-#{$i * 5} { 
+  		margin-left: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.my-#{$i * 5} { 
+  		margin-top: $i * 5px !important;
+  		margin-bottom: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.mx-#{$i * 5} { 
+  		margin-left: $i * 5px !important;
+  		margin-right: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.py-#{$i * 5} { 
+  		padding-top: $i * 5px !important;
+  		padding-bottom: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.px-#{$i * 5} { 
+  		padding-left: $i * 5px !important;
+  		padding-right: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.pt-#{$i * 5} { 
+  		padding-top: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.pb-#{$i * 5} { 
+  		padding-bottom: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.pl-#{$i * 5} { 
+  		padding-left: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.pr-#{$i * 5} { 
+  		padding-right: $i * 5px !important;
+  	}
+}
+
+@for $i from 0 through 25 {
+  	.pb-#{$i * 5} { 
+  		padding-bottom: $i * 5px !important;
+  	}
+}
+
+@for $i from 1 through 10 {
+  @for $x from 0 through 9 {
+      .flex-#{$i}#{$x} {
+        flex: #{$i+'.'+$x} !important;
+      }
+  }
+  .width-auto {
+    width: auto !important;
+  }
+}
+
+@for $i from 1 through 100 {
+    .width-#{$i} {
+      width: #{$i + '%'} !important;
+    }
+}
+
+@include tablet-and-desktop-sm() {
+  @for $i from 1 through 100 {
+      .width-md-#{$i} {
+        width: #{$i + '%'} !important;
+      }
+  }
+  .width-md-auto {
+    width: auto !important;
+  }
+}
+
+@include desktop() {
+  @for $i from 1 through 100 {
+      .width-lg-#{$i} {
+        width: #{$i + '%'} !important;
+      }
+  }
+  .width-lg-auto {
+    width: auto !important;
+  }
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+
+.bg-secondary {
+  background: $secondary-color;
+}
+
+.bg-gray {
+  background: $gray-color;
+}
+
+.bg-brown {
+  background: $brown-color;
+}
+
+.bg-green {
+  background: $green-color;
+}
+
+.bg-cyan {
+  background: $cyan-color;
+}
+
+.bg-orange {
+  background: $orange-color;
+}
+
+.bg-red {
+  background: $red-color;
+}
+
+.bg-blue {
+  background: $blue-color;
+}
+
+.bg-vk {
+  background: $vk-color;
+}
+
+.bg-facebook {
+  background: $facebook-color;
+}
+
+.bg-twitter {
+  background: $twitter-color;
+}
+
+.bg-instagram {
+  background: $instagram-color;
+}
+
+
+
+
+.m-fit {
+  @media(max-width: 767px) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}

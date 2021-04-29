@@ -1,0 +1,120 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+h1,
+.h1 {
+	margin-bottom: 25px;
+	font-weight: 700;
+	font-size: 50px;
+
+	@include phone() {
+		font-size: 30px;
+	}
+
+	@include tablet() {
+		font-size: 30px;
+	}
+}
+
+h2,
+.h2 {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 35px;
+
+	@include phone() {
+		font-size: 25px;
+		margin-bottom: 12px;
+	}
+
+	@include tablet() {
+		font-size: 25px;
+		margin-bottom: 12px;
+	}
+}
+
+
+h4,
+.h4 {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+p,
+a,
+li {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+i {
+	line-height: 0;
+	vertical-align: middle;
+}
+
+hr {
+	border-top: 1px solid #ccc;
+	border-bottom: 0;
+	margin: 10px 0;
+}
+
+.text-primary {
+	// Primary text style
+}
+
+.text-secondary {
+	color: $secondary-color !important;
+}
+
+.text-brown {
+	color: $brown-color !important;
+}
+
+.text-blue {
+	color: $blue-color !important;
+}
+
+.text-green {
+	color: $green-color !important;
+}
+
+.text-cyan {
+	color: $cyan-color !important;
+}
+
+.text-orange {
+	color: $orange-color !important;
+}
+
+.text-lg {
+	font-size: 20px;
+	margin-bottom: 35px;
+	line-height: 1.5;
+
+	@include phone() {
+		font-size: 16px;
+	}
+}
+
+.text-sm {
+	font-size: 13px;
+}
+
+.text-light {
+	font-weight: 300;
+}

@@ -1,0 +1,87 @@
+@font-face {
+ 	font-family: 'Iconsfont';
+ 	src: url('../../fonts/Iconsfont/Iconsfont.eot?1542319921');
+	src: url('../../fonts/Iconsfont/Iconsfont.eot?#iefix-1542319921') format('embedded-opentype'),
+ 		url('../../fonts/Iconsfont/Iconsfont.woff2?1542319921') format('woff2'),
+  		url('../../fonts/Iconsfont/Iconsfont.woff?1542319921') format('woff'),
+  		url('../../fonts/Iconsfont/Iconsfont.ttf?1542319921') format('truetype');
+ 	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='i-']:before,
+[class*=' i-']:before {
+	font-family: 'Iconsfont';
+	display: inline-block;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.i-arrow-left:before {
+	content: '\ea01';
+}
+
+.i-arrow-right:before {
+	content: '\ea02';
+}
+
+.i-bars:before {
+	content: '\ea03';
+}
+
+.i-comment:before {
+	content: '\ea04';
+}
+
+.i-eye:before {
+	content: '\ea05';
+}
+
+.i-facebook:before {
+	content: '\ea06';
+}
+
+.i-file-pdf:before {
+	content: '\ea07';
+}
+
+.i-glasses:before {
+	content: '\ea08';
+}
+
+.i-instagram:before {
+	content: '\ea09';
+}
+
+.i-login:before {
+	content: '\ea0a';
+}
+
+.i-logo:before {
+	content: '\ea0b';
+}
+
+.i-search:before {
+	content: '\ea0c';
+}
+
+.i-times:before {
+	content: '\ea0d';
+}
+
+.i-twitter:before {
+	content: '\ea0e';
+}
+
+.i-vk:before {
+	content: '\ea0f';
+}

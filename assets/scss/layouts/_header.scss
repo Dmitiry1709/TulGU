@@ -1,0 +1,211 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to right, rgba(darken($primary-color, 15%), .85), rgba(darken($primary-color, 6%), .85));
+	z-index: 10;
+
+	@include phone() {
+		position: fixed;
+	}
+
+	&-toggle {
+		position: relative;
+		margin-right: 10px;
+		color: #fff;
+	
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 100%;
+			display: none;
+			margin-left: 12px;
+			width: 300px;
+			@include tablet() {
+				display: block;
+				content: 'Тульский Государственный Университет';
+			}
+			@include desktop-sm() {
+				display: block;
+				content: 'Тульский Государственный Университет';
+			}
+		}
+	}
+
+	&-top {
+		i {
+			font-size: 18px;
+		}
+
+		@include phone() {
+			padding: 8px 0;
+		}
+
+		&-nav {
+			display: flex;
+			justify-content: space-between;
+	
+			@include phone() {
+				& > *{
+					margin-bottom: 0;
+				}
+				.nav-link:not(:first-child) {
+					display: none;
+				}
+			}
+
+			@include tablet() {
+				& > *{
+					margin-bottom: 0;
+				}
+				.nav-link:not(:first-child) {
+					display: none;
+				}
+			}
+
+			@include desktop-sm() {
+				& > *{
+					margin-bottom: 0;
+				}
+				.nav-link:not(:first-child) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&-main {
+		color: #fff;
+		@include phone() {
+			display: none;
+		}
+
+		@include tablet-and-desktop-sm() {
+			padding: 15px 0;
+		}
+
+		&-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+
+			@include tablet-and-desktop-sm() {
+				.nav-list {
+					flex: 1;
+					justify-content: flex-start;
+					margin-left: 80px;
+
+					.nav-link {
+						padding: 5px 10px;
+						margin: 0 5px;
+						font-size: 15px;
+
+						&.active {
+							color: #fff;
+							background: $primary-color;
+							&:after {
+								display: none;
+							}
+						}
+
+						& a,
+						& button {
+							color: inherit;
+							font-size: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-logo {
+		display: block;
+		width: 280px;
+		height: 110px;
+		background: url('../../images/logo-full-white.png') no-repeat center center;
+		background-size: contain;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-buttons {
+		text-align: right;
+		@include tablet-and-desktop-sm() {
+			display: none;
+			text-align: left;
+		}
+	}
+
+	&-dropdown {
+		position: relative;
+		display: none;
+		padding: 3px 0;
+		background: $primary-color;
+		box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+		z-index: 10;
+
+		&-lg {
+			padding: 25px 0;
+		}
+
+		&-absolute {
+			width: 100%;
+			position: absolute;
+		}
+
+		* {
+			color: #fff;
+		}
+	}
+
+	&-inside {
+		background: $primary-color;
+
+		& ~ .content {
+			margin-top: 210px;
+
+			@include phone() {
+				margin-top: 50px;
+			}
+
+			@include tablet-and-desktop-sm {
+				margin-top: 180px;
+			}
+		}
+
+		.header-main {
+			background: #fff;
+			border-bottom: 1px solid $primary-color;
+
+			.header-logo {
+				background: url('../../images/logo-full-primary.png') no-repeat center center;
+				background-size: contain;
+			}
+
+			.nav-link {
+				color: $primary-color;
+
+				&.active:after {
+					background: $primary-color
+				}
+			}
+
+			.btn {
+				background: transparent;
+				color: $primary-color;
+
+				&:hover {
+					background: $primary-color;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

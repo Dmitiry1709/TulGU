@@ -1,0 +1,269 @@
+.navigation {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: $primary-color;
+	z-index: 11;
+
+	& .row {
+		position: relative;
+	}
+
+	&-toolbar {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-bottom: 30px;
+
+		@include phone() {
+			flex-direction: column-reverse;
+		}
+
+		& > *:nth-child(2) {
+			flex: 3;
+
+			@include phone() {
+				min-width: 100%;
+			}
+		}
+		& > *:nth-child(3) {
+			flex: 1;
+
+			@include phone() {
+				width: 100%;
+			}
+		}
+	}
+
+	&-close {
+		position: absolute;
+		top: 13px;
+		left: -30px;
+		color: #fff;
+
+		@include phone() {
+			top: 5px;
+			left: 5px;
+			z-index: 3;
+		}
+	}
+
+	&-accordion {
+	
+		&-content {
+			display: none;
+			margin-bottom: 40px;
+
+			@include phone() {
+				margin-bottom: 0;
+			}
+		}
+
+		&.active &-content {
+			display: flex;
+		}
+	}
+}
+
+.nav-link {
+	position: relative;
+	display: flex;
+	padding: 9px 0;
+	margin: 0 13px;
+	font-size: 15px;
+	color: #fefefe;
+	transition: .25s;
+	cursor: pointer;
+
+	@include phone() {
+		padding: 6px 0;
+	}
+
+	&:hover,
+	&:hover a
+	 {
+		text-decoration: none !important; 
+		opacity: .75;
+	}
+
+	& > * {
+		display: flex;
+		font-size: 15px;
+	}
+
+	&.active:after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: #fff;
+	}
+	
+	&.pull-right,
+	&.pull-right ~ & {
+		margin: 0 6px;
+
+		@include phone() {
+			display: block !important;
+		}
+
+		@include tablet() {
+			display: block !important;
+		}
+
+		@include desktop-sm() {
+			display: block !important;	
+		}
+	}
+
+	&-sm {
+		padding: 6px 0;
+		font-size: 12px;
+
+		& > * {
+			font-size: 12px;
+		}
+	}
+
+	&-lg {
+		padding: 14px 0;
+		font-size: 20px;
+
+		&.active:after {
+			height: 8px;
+		}
+
+		& > * {
+			font-size: 20px;
+		}
+	}
+
+	i:not(.i-bars) {
+		opacity: .5;
+		font-size: 18px;
+
+		@include phone() {
+			font-size: 22px;
+		}
+	}
+
+	&-plain {
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 300;
+		justify-content: flex-end;
+	}
+}
+
+.nav-title {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	white-space: nowrap;
+	text-transform: uppercase;
+	color: rgba(#fff, .45);
+
+	&-sm {
+		font-size: 12px;
+		letter-spacing: 1.6px;
+	}
+}
+
+
+.nav-list {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;
+	list-style: none;
+
+	@include phone() {
+		margin-bottom: 17px;
+	}
+
+	&-row {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		&-start {
+			justify-content: flex-start;
+		}
+	}
+
+	&.active {
+		& > * {
+			display: block !important;
+		}
+	}
+
+	&-icon {
+		position: absolute;
+		top: 10px;
+		left: -63px;
+		height: 100%;
+		padding-right: 12px;
+		font-size: 40px;
+
+		@include phone() {
+			position: relative;
+			top: 0;
+			left: 0;
+			line-height: 0;
+		}
+
+		&:after {
+			position: absolute;
+			right: 0;
+			top: 5px;
+			height: calc(100% - 29px);
+			width: 2px;
+			content: '';
+
+			@include phone() {
+				display: none;
+			}
+		}
+
+		&-brown {
+			color: $brown-color;
+			&:after {
+				background: $brown-color;
+			}
+		}
+
+		&-green {
+			color: $green-color;
+			&:after {
+				background: $green-color;
+			}
+		}
+
+		&-cyan {
+			color: $cyan-color;
+			&:after {
+				background: $cyan-color;
+			}
+		}
+
+		&-orange {
+			color: $orange-color;
+			&:after {
+				background: $orange-color;
+			}
+		}
+	}
+}

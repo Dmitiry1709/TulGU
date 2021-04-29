@@ -1,0 +1,172 @@
+.event-box {
+	display: flex;
+	height: 540px;
+
+	@include phone() {
+		flex-direction: column;
+		height: auto;
+
+		& .tags {
+			display: none;
+		}
+	}
+
+	&-main {
+		width: 66%;
+
+		@include phone() {
+			width: 100%;
+		}
+
+		@include tablet() {
+			width: 60%;
+		}
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		width: 34%;
+
+		@include phone() {
+			width: 100%;
+		}
+
+		@include tablet() {
+			width: 40%;
+		}
+	}
+
+	&-list &-item:first-child {
+		flex: 2;
+		display: block;
+	}
+
+	&-list &-item:first-child &-content {
+		@include phone() {
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+	}
+
+	&-main &-item {
+		justify-content: flex-end;
+		@include phone() {
+			min-height: 180px;
+		}
+	}
+
+	&-item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		img {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			filter: brightness(0.7);
+		}
+
+		video,
+		iframe {
+			width: 100%;
+			height: 100%;
+			z-index: 5;
+		}
+	}
+
+	&-toolbar {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		list-style-type: none;
+		color: $secondary-color;
+		z-index: 3;
+
+		& > * {
+			height: 35px;
+			line-height: 35px;
+
+			&[class*="bg-"] {
+				color: #fff;
+
+				@include phone() {
+					width: 100%;
+				}
+			}
+
+			&:first-child {
+				padding-left: 30px;
+
+				@include phone() {
+					padding-left: 15px;
+				}
+			}
+
+			&:last-child {
+				padding-right: 30px;
+
+				@include phone() {
+					padding-right: 15px;
+				}
+			}
+
+			&:nth-child(2) {
+				margin-left: auto;
+			}
+		}
+	}
+
+	&-content {
+		position: relative;
+		padding: 10px 30px;
+		z-index: 3;
+
+		@include phone() {
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 10px 15px;
+		}
+
+		@include tablet() {
+			line-height: 1.5;
+
+			& > .h4 {
+				white-space: nowrap;
+			}
+		}
+
+		& > * {
+			line-height: 1.7;
+			margin-bottom: 7px;
+
+			@include phone() {
+				line-height: 1.5;
+				margin-bottom: 3px;
+			}
+
+			@include tablet() {
+				line-height: 1.5;
+			}
+		}
+	}
+
+	.text-white &,
+	.text-white &-toolbar {
+		color: #fff;
+	}
+}

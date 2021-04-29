@@ -1,0 +1,42 @@
+#directories
+__MACOSX*
+.DS_Store*
+/.filemgr-tmp/
+/.mc
+/.ssh
+/.git
+#root files
+/*test*
+/.idea
+
+# Прочие файлы
+sitemap_*
+Thumbs.db
+*.csv
+*.gz
+*.bat
+*.dat
+*.pdf
+*.psd
+*.sql
+*.log
+*.txt
+*.flv
+*.wmv
+*.xls
+*.swf
+*.xml
+*.pptx
+*.doc
+*.docx
+*.mp3
+*.rar
+*.zip
+
+# Восстановление
+*.tar.*
+htdocs/.htaccess.restore
+
+/node_modules/
+htdocs/assets/build/
+
