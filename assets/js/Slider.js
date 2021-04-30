@@ -5,7 +5,7 @@ class Slider {
 		if (!document.querySelector('.slider-container')) 
 			return null; 
 		
-		const slider = tns.call({
+		const slider = tns({
 		    container: '.slider-container',
 		    items: 1,
 		    mouseDrag: true,
