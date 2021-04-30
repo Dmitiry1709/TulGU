@@ -9,6 +9,17 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 }
 
 Encore
+    .configureBabel(function(babelConfig) {
+        babelConfig.presets.push('@babel/preset-flow');
+        // babelConfig.presets.push('@babel/preset-react');
+
+        babelConfig.plugins.push('styled-jsx/babel');
+        babelConfig.plugins.push("@babel/plugin-proposal-class-properties");
+        // babelConfig.plugins.push("babel-preset-es2015");
+        // babelConfig.plugins.push("babel-plugin-babel-preset-react");
+        // babelConfig.plugins.push("babel-preset-stage-0");
+    }, {
+    })
     // the project directory where all compiled assets will be stored
     .setOutputPath('htdocs/assets/build/')
 
@@ -65,6 +76,13 @@ Encore
                 'svg-sprite-loader'
             ]
         })
+    // .addLoader(
+    //     {
+    //         test: /\.js$/,
+    //         use: [
+    //             'babel-loader'
+    //         ]
+    //     })
     .addPlugin( new SpriteLoaderPlugin ())
 ;
 

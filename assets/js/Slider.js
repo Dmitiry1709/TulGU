@@ -1,11 +1,11 @@
-import { tns } from 'tiny-slider';
+import { tns } from 'tiny-slider/src/tiny-slider';
 
 class Slider {
 	constructor(){
 		if (!document.querySelector('.slider-container')) 
 			return null; 
 		
-		const slider = tns({
+		const slider = tns.call({
 		    container: '.slider-container',
 		    items: 1,
 		    mouseDrag: true,
